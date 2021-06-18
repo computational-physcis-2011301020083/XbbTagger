@@ -1,0 +1,17 @@
+Converted from https://gitlab.cern.ch/atlas-boosted-xbb/models/xbb2020v2/
+How to run: 
+lwtnn-test-lightweight-graph network.json input.json (GeV)
+or 
+lwtnn-test-lightweight-graph networkMeV.json inputMeV.json (MeV) 
+
+The input.json is the input.
+The input pt should be in GeV or MeV. 
+The missing subjet informations should be replaced by the default values in this json file.
+
+For the input values for this input.json file, the outputs of my local 2D model is :
+QCD: 0.77079982,  
+Higgs: 0.02534039,  
+Top: 0.20385981
+Which is consistant with the output of (lwtnn-test-lightweight-graph network.json input.json or lwtnn-test-lightweight-graph networkMeV.json inputMeV.json ).
+
+
